@@ -1,0 +1,13 @@
+{
+  "name": "projectrunpi-devlog",
+  "compatibility_date": "2026-05-30",
+  "main": "./workers/app.ts",
+  "compatibility_flags": ["nodejs_compat", "nodejs_compat_populate_process_env"],
+  "workers_dev": false,
+  "routes": [
+    {
+      "pattern": "devlog.projectrunpi.com",
+      "custom_domain": true
+    }
+  ]
+}
