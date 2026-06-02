@@ -1,5 +1,5 @@
 export const SITE_NAME = "Project RunPi DevLog"
-export const DESCRIPTION = "Project Runpi builds modern web apps with React and Laravel. Development services tailored to your needs. Let's build something together."
+export const DESCRIPTION = "Project Runpi Development Logs"
 
 export const COPYRIGHT = "© 2026 Project RunPi. All rights reserved."
-export const FOOTNOTE = "Self-hosted using Raspberry Pi 5"
+export const FOOTNOTE = "Frontend on Cloudflare Pages · Backend self-hosted on Raspberry Pi 5"

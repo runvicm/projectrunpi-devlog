@@ -2,6 +2,17 @@ import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router";
 import { LogView, type LogProps } from "~/components/sections/LogView";
 import { LogViewSkeleton } from "~/components/sections/LogViewSkeleton";
+import type { Route } from "./+types/ViewLog";
+import { SITE_NAME } from "~/constant/app";
+export { loader } from "~/routes/api/viewdevlog";
+
+export function meta({ matches }: Route.MetaArgs) {
+  const loaderData = matches[matches.length - 1]?.loaderData as LogProps;
+  return [
+    { title: `${SITE_NAME} - ${loaderData?.title ?? 'View'}` },
+    { name: "description", content: loaderData?.overview ?? "" },
+  ];
+}
 
 const ViewLog = () => {
 
